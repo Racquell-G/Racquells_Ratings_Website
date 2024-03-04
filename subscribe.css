@@ -1,0 +1,137 @@
+body {
+  min-height: 100vh;
+}
+
+header {
+  padding-bottom: 25vh;
+}
+
+nav,
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a:hover,
+.footer-nav a:hover {
+  color: #adadad;
+}
+
+.website-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.website-logo-name {
+  margin-left: 1rem;
+  font-size: 36px;
+}
+
+.header-nav-links,
+.footer-nav-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav-links a,
+.footer-nav-links a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.user-attention {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.subscribe-texts {
+  padding: 5rem;
+}
+
+.subscribe-main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.subscribe-text-title {
+  margin: 0;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.subscribe-form {
+  background-color: #202027;
+  width: 50vw;
+  max-width: 35%;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+.input-collection {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.input-collection:last-child {
+  margin-bottom: 0;
+}
+
+.input-collection label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-collection input {
+  color: #2f303a;
+  font-family: inherit;
+  background: none;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.input-collection input:focus {
+  border-color: #596da0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: #202027;
+  font-weight: bold;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  clear: both;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer-nav {
+  justify-content: right;
+}
+
+.social-link img {
+  margin-right: 0.25rem;
+  width: 1em;
+}

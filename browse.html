@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="browse.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/logoo.png">
+    <title>Racquell's Ratings - Browse</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="website-logo">
+                <img class="logo" src="./images/logoo.png">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#shows">TV Shows</a></li>
+            </ul>
+
+
+            <div class="sidebar">
+                <div class="text-title">Racquell's Ratings</div>
+                <ul class="sidebar-links">
+                    <li><a href="index.html" class="home-link">About</a></li>
+                    <li><a href="#" class="browse-link">Browse 
+                        <i class="fa fa-caret-down dropdownArrow"></i>
+                    </a>
+                        <ul class="browse-options">
+                            <li><a href="#movies">Movies</a></li>
+                            <li><a href="#music">Music</a></li>
+                            <li><a href="#shows">TV Shows</a></li>
+                        </ul>
+                        </li>
+                    <li><a href="subscribe.html" class="subscribe-link">Subscribe</a></li> 
+                </ul>
+            </div>
+
+            <div class="burger">
+               <div class ="line1"></div>
+               <div class ="line2"></div>
+               <div class ="line3"></div>     
+            </div>
+
+        </nav>
+        <script src="app2.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.browse-link').click(function() {
+                    $(this).next('.browse-options').slideToggle();
+                    $(this).find('.dropdownArrow').toggleClass('rotate');
+                });
+            });
+        </script>
+    </header>
+<div class="catalog">
+    <section id="movies"><h1>Recent Movies</h1>
+        <div class="deck">
+        <div class="container">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <div class="poster">
+                    <img src="./images/nightcrawler.jpg" alt="nightcrawler movie poster">
+                </div>
+                <div class="rate">
+                    <h3>Nightcrawler (2014)</h3>
+                    <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <div class="poster">
+                    <img src="./images/bladeRunner.jpg" alt="blade runner movie poster">
+                </div>
+                <div class="rate">
+                    <h3>Blade Runner (2017)</h3>
+                    <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <div class="poster">
+                    <img src="./images/ghostDog.jpg" alt="ghost dog movie poster">
+                </div>
+                <div class="rate">
+                    <h3>Ghost Dog: The Way of the Samurai (1999)</h3>
+                    <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <div class="poster">
+                    <img src="./images/drive.jpg" alt="drive movie poster">
+                </div>
+                <div class="rate">
+                    <h3>Drive (2011)</h3>
+                    <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card" data-tilt data-tilt-scale="1.1">
+                <div class="poster">
+                    <img src="./images/fightClub.jpg" alt="fight club movie poster">
+                </div>
+                <div class="rate">
+                    <h3>Fight Club (1999)</h3>
+                    <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                    
+                </div>
+            </div>
+        </div>
+       </div> 
+    </section>
+    <section id="movies2"><h1>All-Time Movies</h1>
+        <div class="deck">
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/inception.jpg" alt="inception movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Inception (2010)</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/whiplash.jpg" alt="whiplash movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Whiplash (2014)</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/theGreatGatsby.jpg" alt="the great gatsby movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>The Great Gatsby (2013)</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/donnieDarko.jpg" alt="donnie darko movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Donnie Darko (2001)</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/doTheRightThing.jpg" alt="do the right thing movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Do The Right Thing (1989)</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+    <section id="music"><h1>Recent Songs</h1>
+        <div class="deck">
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/theSlowRush.jpg" alt="The Slow Rush cover">
+                    </div>
+                    <div class="rate">
+                        <h3>One More Hour by Tame Impala</h3>
+                        <h5>&#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/porVida.jpg" alt="Por Vida cover">
+                    </div>
+                    <div class="rate">
+                        <h3>Melting by Kali Uchis</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/youAndYourFriends.jpg" alt="You And Your Friends cover">
+                    </div>
+                    <div class="rate">
+                        <h3>Shampoo Bottles by Peach Pit</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/puppyDog.jpg" alt="Puppy Dog cover">
+                    </div>
+                    <div class="rate">
+                        <h3>Puppy Dog by Dreamer Boy</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+    <section id="music2"><h1>All-Time Songs</h1>
+        <div class="deck">
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/100$Bill.jpg" alt="100$ Bill cover">
+                    </div>
+                    <div class="rate">
+                        <h3>100$ Bill by Jay-Z</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/becauseTheInternet.jpg" alt="II. Zealots of Stockholm [Free Information] cover">
+                    </div>
+                    <div class="rate">
+                        <h5>II. Zealots of Stockholm [Free Information] by Childish Gambino</h5>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/asapRockyTypeBeat.jpg" alt="AsapRockyTypeBeat cover">
+                    </div>
+                    <div class="rate">
+                        <h3>AsapRockyTypeBeat by Thestand4rd</h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+           </div>
+        </section>
+        <section id="music3"><h1>Recent Albums</h1>
+            <div class="deck">
+                <div class="container">
+                    <div class="card" data-tilt data-tilt-scale="1.1">
+                        <div class="poster">
+                            <img src="./images/mrMorale&TheBigSteppers.jpg" alt="Mr. Morale & The Big Steppers cover">
+                        </div>
+                        <div class="rate">
+                            <h3>Mr.Morale & The Big Steppers by Kendrick Lamar</h3>
+                            <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="cardH" data-tilt data-tilt-scale="1.1">
+                        <div class="poster">
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="cardH" data-tilt data-tilt-scale="1.1">
+                        <div class="poster">
+                            <img src="#" alt="">
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </section>
+            <section id="music4"><h1>All-Time Albums</h1>
+                <div class="deck">
+                    <div class="container">
+                        <div class="card" data-tilt data-tilt-scale="1.1">
+                            <div class="poster">
+                                <img src="./images/100$Bill.jpg" alt="Music From Baz Luhrmann's Film: The Great Gatsby cover">
+                            </div>
+                            <div class="rate">
+                                <h5>Music From Baz Luhrmann's Film: The Great Gatsby by Various Artists</h5>
+                                <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" data-tilt data-tilt-scale="1.1">
+                            <div class="poster">
+                                <img src="./images/beautifulPeopleWillRuinYourLife.jpg" alt="Beautiful People Will Ruin Your Life cover">
+                            </div>
+                            <div class="rate">
+                                <h5>Beautiful People Will Ruin Your Life (Extended Version) by The Wombats</h5>
+                                <h5>&#9733 &#9733 &#9733 &#9733 &#9733</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" data-tilt data-tilt-scale="1.1">
+                            <div class="poster">
+                                <img src="./images/theAgeOfTheUnderstatement.jpg" alt="The Age Of The Understatement cover">
+                            </div>
+                            <div class="rate">
+                                <h5>The Age Of The Understatement by The Last Shadow Puppets</h5>
+                                <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </section>
+    <section id="shows"><h1>Recent TV Shows</h1>
+        <div class="deck">
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/strangerThings.jpg" alt="stranger things s4 tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Stranger Things S4 (2022) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/community.jpg" alt="community tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Community (2009-2015) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/theRighteousGemstones.jpg" alt="the righteous gemstones tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>The Righteous Gemstones (2019-) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/barry.jpg" alt="barry tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Barry (2018-2023) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/succession.jpg" alt="succession movie poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Succession (2018-2023) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+    <section id="shows2"><h1>All-Time TV Shows</h1>
+        <div class="deck">
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/iasip.jpg" alt="iasip tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>It's Always Sunny in Philadelphia (2005-) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/arrestedDevelopment.jpg" alt="arrested development tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Arrested Development S1 (2003-2004) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/arrestedDevelopment2.jpg" alt="arrested development 2nd tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Arrested Development S2 (2004-2005) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card" data-tilt data-tilt-scale="1.1">
+                    <div class="poster">
+                        <img src="./images/arrestedDevelopment3.jpg" alt="arrested development 3rd tv poster">
+                    </div>
+                    <div class="rate">
+                        <h3>Arrested Development S3 (2005-2006) </h3>
+                        <h5>&#9733 &#9733 &#9733 &#9733</h5>
+                        
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+</div>
+
+<script src="./vanilla-tilt.js"></script>
+</body>
+</html>
